@@ -1,19 +1,23 @@
 ﻿using Dynamo.Controls;
 using Dynamo.Wpf;
+using DynamoUI.WPF;
 
 namespace DynamoUI
 {
-    public class HelloGuiNodeView : INodeViewCustomization<DynamoNodeModel>
+    public class ButtonNodeView : INodeViewCustomization<ButtonNodeModel>
     {
-        public void CustomizeView(DynamoNodeModel model, NodeView nodeView)
+        public void CustomizeView(ButtonNodeModel model, NodeView nodeView)
         {
-            Slider slider = new Slider();
-            nodeView.inputGrid.Children.Add(slider);
-            slider.DataContext = model;
+            Button button = new Button();
+            nodeView.inputGrid.Children.Add(button);
+            button.DataContext = model;
+
         }
 
         public void Dispose()
         {
         }
     }
+
+   
 }

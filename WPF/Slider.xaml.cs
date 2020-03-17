@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace DynamoUI
+namespace DynamoUI.WPF
 {
     /// <summary>
     ///     Interaction logic for UserControl1.xaml

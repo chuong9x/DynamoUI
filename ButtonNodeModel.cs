@@ -15,7 +15,7 @@ namespace DynamoUI
     [OutPortTypes("double")]
     [OutPortDescriptions("Double")]
     [IsDesignScriptCompatible]
-    public class DynamoNodeModel : NodeModel
+    public class ButtonNodeModel : NodeModel
     {
         #region public methods
 
@@ -23,7 +23,6 @@ namespace DynamoUI
         public override IEnumerable<AssociativeNode> BuildOutputAst(List<AssociativeNode> inputAsNodes)
         {
             DoubleNode doubleNode = AstFactory.BuildDoubleNode(number);
-
             //var funcNode = AstFactory.BuildFunctionCall(
             //    new Func<double, double, double>(NodeModelsEssentialsFunctions.Multiply),
             //    new List<AssociativeNode>() { doubleNode, doubleNode }
@@ -93,11 +92,11 @@ namespace DynamoUI
         #region constructor
 
         [JsonConstructor]
-        DynamoNodeModel(IEnumerable<PortModel> inPorts, IEnumerable<PortModel> outPorts) : base(inPorts, outPorts)
+        ButtonNodeModel(IEnumerable<PortModel> inPorts, IEnumerable<PortModel> outPorts) : base(inPorts, outPorts)
         {
         }
 
-        public DynamoNodeModel()
+        public ButtonNodeModel()
         {
             RegisterAllPorts();
 
@@ -106,7 +105,7 @@ namespace DynamoUI
 
             MinimumValue = 0.0;
             MaximumValue = 100.0;
-            step = 10.0;
+            step = 1.0;
         }
 
         #endregion

@@ -41,13 +41,13 @@ C:\Users\chuong.ho\source\repos\DynamoUI\DynamoUI\obj\Debug\DynamoUI.pdb
 D:\API\DynamoUI\bin\Debug\DynamoUI.dll
 D:\API\DynamoUI\bin\Debug\DynamoUI.pdb
 D:\API\DynamoUI\bin\Debug\Newtonsoft.Json.dll
-D:\API\DynamoUI\obj\Debug\Slider.g.cs
 D:\API\DynamoUI\obj\Debug\DynamoUI_MarkupCompile.cache
 D:\API\DynamoUI\obj\Debug\DynamoUI_MarkupCompile.lref
-D:\API\DynamoUI\obj\Debug\Slider.baml
 D:\API\DynamoUI\obj\Debug\DynamoUI.g.resources
 D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CoreCompileInputs.cache
 D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CopyComplete
 D:\API\DynamoUI\obj\Debug\DynamoUI.dll
 D:\API\DynamoUI\obj\Debug\DynamoUI.pdb
 D:\API\DynamoUI\obj\Debug\DynamoUI.csprojAssemblyReference.cache
+D:\API\DynamoUI\obj\Debug\WPF\Button.g.cs
+D:\API\DynamoUI\obj\Debug\WPF\Button.baml
