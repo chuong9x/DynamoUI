@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Autodesk.DesignScript.Runtime;
 using Dynamo.Graph.Nodes;
-using Dynamo.UI.Commands;
 using DynamoUI.Funtion;
 using Newtonsoft.Json;
 using ProtoCore.AST.AssociativeAST;
@@ -21,25 +20,25 @@ namespace DynamoUI
     [IsDesignScriptCompatible]
     public class SliderNodeModel : NodeModel
     {
+        #region Private Member
 
-        #region Contrustor
-
-        [JsonConstructor]
-        SliderNodeModel(IEnumerable<PortModel> inPorts, IEnumerable<PortModel> outPorts) : base(inPorts, outPorts)
-        {
-        }
-
-        public SliderNodeModel()
-        {
-            RegisterAllPorts();
-            
-        }
+        double _sliderValue;
 
         #endregion
 
-        #region Private Member
 
-        double _Slidervalue;
+        #region Properties
+
+        public double SliderValue
+        {
+            get => _sliderValue;
+            set
+            {
+                _sliderValue = value;
+                RaisePropertyChanged("SliderValue");
+                OnNodeModified(true);
+            }
+        }
 
         #endregion
 
@@ -51,11 +50,14 @@ namespace DynamoUI
         [IsVisibleInDynamoLibrary(false)]
         public override IEnumerable<AssociativeNode> BuildOutputAst(List<AssociativeNode> inputAsNodes)
         {
+            var list = new List<AssociativeNode>();
+
             DoubleNode doubleNode = AstFactory.BuildDoubleNode(SliderValue);
+
             //var funcNode = AstFactory.BuildFunctionCall(
-            //    new Func<double, double, double>(NodeModelsEssentialsFunctions.Multiply),
-            //    new List<AssociativeNode>() { doubleNode, doubleNode }
-            //    );
+            //    new Func<double, double, double>(SampleFuntion.MultiplyTwoNumbers),
+            //    new List<AssociativeNode>()
+            //);
 
             return new[]
             {
@@ -66,23 +68,18 @@ namespace DynamoUI
 
         #endregion
 
+        #region Contrustor
 
-        #region Properties
-
-        public  double SliderValue
+        [JsonConstructor]
+        SliderNodeModel(IEnumerable<PortModel> inPorts, IEnumerable<PortModel> outPorts) : base(inPorts, outPorts)
         {
-            get => _Slidervalue;
-            set
-            {
-                _Slidervalue = value;
-                RaisePropertyChanged("SliderValue");
-                OnNodeModified(true);
-            }
+        }
+
+        public SliderNodeModel()
+        {
+            RegisterAllPorts();
         }
 
         #endregion
-
-
-        
     }
 }

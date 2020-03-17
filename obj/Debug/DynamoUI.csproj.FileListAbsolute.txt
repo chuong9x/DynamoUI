@@ -52,4 +52,5 @@ D:\API\DynamoUI\obj\Debug\WPF\Button.g.cs
 D:\API\DynamoUI\obj\Debug\WPF\Button.baml
 D:\API\DynamoUI\obj\Debug\WPF\Slider.g.cs
 D:\API\DynamoUI\obj\Debug\WPF\Slider.baml
-D:\API\DynamoUI\obj\Debug\DynamoUI.csprojAssemblyReference.cache
+D:\API\DynamoUI\obj\Debug\WPF\ComboBox.g.cs
+D:\API\DynamoUI\obj\Debug\WPF\ComboBox.baml
