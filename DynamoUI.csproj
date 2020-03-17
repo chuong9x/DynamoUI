@@ -124,7 +124,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Funtion.cs" />
+    <Compile Include="DropDown.cs" />
+    <Compile Include="SampleFuntion.cs" />
     <Compile Include="DynamoNodeModel.cs" />
     <Compile Include="DynamoNodeView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

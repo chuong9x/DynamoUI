@@ -50,3 +50,4 @@ D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CoreCompileInputs.cache
 D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CopyComplete
 D:\API\DynamoUI\obj\Debug\DynamoUI.dll
 D:\API\DynamoUI\obj\Debug\DynamoUI.pdb
+D:\API\DynamoUI\obj\Debug\DynamoUI.csprojAssemblyReference.cache
