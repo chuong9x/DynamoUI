@@ -48,6 +48,8 @@ D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CoreCompileInputs.cache
 D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CopyComplete
 D:\API\DynamoUI\obj\Debug\DynamoUI.dll
 D:\API\DynamoUI\obj\Debug\DynamoUI.pdb
-D:\API\DynamoUI\obj\Debug\DynamoUI.csprojAssemblyReference.cache
 D:\API\DynamoUI\obj\Debug\WPF\Button.g.cs
 D:\API\DynamoUI\obj\Debug\WPF\Button.baml
+D:\API\DynamoUI\obj\Debug\WPF\Slider.g.cs
+D:\API\DynamoUI\obj\Debug\WPF\Slider.baml
+D:\API\DynamoUI\obj\Debug\DynamoUI.csprojAssemblyReference.cache

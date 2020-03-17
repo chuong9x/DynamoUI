@@ -1,6 +1,6 @@
 ﻿namespace DynamoUI.Funtion
 {
-    public static class DynamoFuntion
+    public static class SampleFuntion
     {
         public static double MultiplyTwoNumbers(double a, double b)
         {

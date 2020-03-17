@@ -8,7 +8,7 @@ using ProtoCore.AST.AssociativeAST;
 
 namespace DynamoUI
 {
-    [NodeName("UI.Slider")]
+    [NodeName("UI.Button")]
     [NodeDescription("A sample Node Model with custom Wpf UI.")]
     [NodeCategory("DynamoUI")]
     [OutPortNames(">")]
@@ -19,6 +19,9 @@ namespace DynamoUI
     {
         #region public methods
 
+        // Abstract Syntax Tree  |  Trả về  cây cú pháp trừu tượng chứa dữ liệu từ nút NodeModel
+        // AssociativeNode | Map các node đầu vào vào tham số chức năng 
+        //
         [IsVisibleInDynamoLibrary(false)]
         public override IEnumerable<AssociativeNode> BuildOutputAst(List<AssociativeNode> inputAsNodes)
         {
@@ -40,6 +43,7 @@ namespace DynamoUI
 
         #region private members
 
+        // Khai báo các biến dữ liệu
         double number;
         double maximumValue;
         double minimumValue;
@@ -59,6 +63,7 @@ namespace DynamoUI
             set
             {
                 minimumValue = value;
+                // Thông báo UI Giá trị thay đổi.
                 RaisePropertyChanged("MinimumValue");
             }
         }
