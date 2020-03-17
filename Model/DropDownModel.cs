@@ -14,41 +14,38 @@ namespace DynamoUI
     [OutPortTypes("double")]
     [OutPortDescriptions("Double")]
     [IsDesignScriptCompatible]
-    public abstract class DropDownModel : DSDropDownBase
+    public class DropdownModel : DSDropDownBase
     {
-        public const string outputName = "item";
-
-        public DropDownModel() : base(outputName)
-        {
-        }
-
-        [JsonConstructor]
-        public DropDownModel(IEnumerable<PortModel> inPorts, IEnumerable<PortModel> outPorts) : base(outputName,
-            inPorts, outPorts)
-        {
-        }
+        public DropdownModel() : base("Name of the output") { }
 
         protected override SelectionState PopulateItemsCore(string currentSelection)
         {
             Items.Clear();
-
-            List<DynamoDropDownItem> newItems = new List<DynamoDropDownItem>
+            Dictionary<string, int> dropdownItems = new Dictionary<string, int> {
+            { "Test1", 1 },
+            { "Test2", 2 },
+            { "Test3", 3 },
+            { "Test4", 4 },
+        };
+            foreach (KeyValuePair<string, int> item in dropdownItems)
             {
-                new DynamoDropDownItem("Tywin", 0),
-                new DynamoDropDownItem("Cersei", 1),
-                new DynamoDropDownItem("Hodor", 2)
-            };
-
-            Items.AddRange(newItems);
-            SelectedIndex = 0;
+                Items.Add(new DynamoDropDownItem(item.Key, item.Value));
+            }
             return SelectionState.Restore;
         }
 
-        public override IEnumerable<AssociativeNode> BuildOutputAst(List<AssociativeNode> inputastNodes)
+        public override IEnumerable<AssociativeNode> BuildOutputAst(List<AssociativeNode> inputAstNodes)
         {
-            IntNode intNode = AstFactory.BuildIntNode((int) Items[SelectedIndex].Item);
-            BinaryExpressionNode assign = AstFactory.BuildAssignment(GetAstIdentifierForOutputIndex(0), intNode);
-            return new List<AssociativeNode> {assign};
+            if (Items.Count == 0 ||
+                SelectedIndex == -1) //NB! This line is crucial for some reason
+            //https://forum.dynamobim.com/t/c-dropdown/17503/6
+            {
+                return new[] { AstFactory.BuildAssignment(GetAstIdentifierForOutputIndex(0), AstFactory.BuildNullNode()) };
+            }
+
+            var intNode = AstFactory.BuildIntNode((int)Items[SelectedIndex].Item);
+            var assign = AstFactory.BuildAssignment(GetAstIdentifierForOutputIndex(0), intNode);
+            return new List<AssociativeNode> { assign };
         }
     }
 }

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\API\DynamoUI\obj\Debug\
+H:\revit\Dynamo\API\DynamoUI\obj\Debug\
 DynamoUI
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 3136535265
 
-15-918423110
-32-1636430421
+15-157850704
+33-107515346
 WPF\Button.xaml;WPF\Slider.xaml;WPF\ComboBox.xaml;
 
-False
+True
 
