@@ -33,9 +33,9 @@ namespace DynamoUI.Model
         }
     }
 
-    class ComboBoxModel : NodeModel
+    class comboBoxModel : NodeModel
     {
-        public ComboBoxModel()
+        public comboBoxModel()
         {
             RegisterAllPorts();
             foreach (PortModel current in InPorts) current.Connectors.CollectionChanged += Connectors_CollectionChanged;

@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Autodesk.DesignScript.Runtime;
 using Dynamo.Graph.Nodes;
+using DynamoUI.Funtion;
 using Newtonsoft.Json;
 using ProtoCore.AST.AssociativeAST;
 
@@ -48,7 +50,7 @@ namespace DynamoUI
         [IsVisibleInDynamoLibrary(false)]
         public override IEnumerable<AssociativeNode> BuildOutputAst(List<AssociativeNode> inputAsNodes)
         {
-            List<AssociativeNode> list = new List<AssociativeNode>();
+            var list = new List<AssociativeNode>();
 
             DoubleNode doubleNode = AstFactory.BuildDoubleNode(SliderValue);
 
