@@ -12,8 +12,13 @@ DEBUG;TRACE
 
 3136535265
 
+<<<<<<< HEAD
 15-157850704
 33-107515346
+=======
+151981783706
+32-1636430421
+>>>>>>> fb3569762488a1d419197fbfe113b1a98c7e91b2
 WPF\Button.xaml;WPF\Slider.xaml;WPF\ComboBox.xaml;
 
 True

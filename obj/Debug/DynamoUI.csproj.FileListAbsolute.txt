@@ -41,13 +41,24 @@ C:\Users\chuong.ho\source\repos\DynamoUI\DynamoUI\obj\Debug\DynamoUI.pdb
 D:\API\DynamoUI\bin\Debug\DynamoUI.dll
 D:\API\DynamoUI\bin\Debug\DynamoUI.pdb
 D:\API\DynamoUI\bin\Debug\Newtonsoft.Json.dll
+D:\API\DynamoUI\bin\Debug\RevitAPI.dll
+D:\API\DynamoUI\bin\Debug\RevitAPIUI.dll
+D:\API\DynamoUI\bin\Debug\RevitNodes.dll
+D:\API\DynamoUI\bin\Debug\RevitServices.dll
+D:\API\DynamoUI\obj\Debug\WPF\Button.g.cs
+D:\API\DynamoUI\obj\Debug\WPF\Slider.g.cs
+D:\API\DynamoUI\obj\Debug\WPF\ComboBox.g.cs
 D:\API\DynamoUI\obj\Debug\DynamoUI_MarkupCompile.cache
 D:\API\DynamoUI\obj\Debug\DynamoUI_MarkupCompile.lref
+D:\API\DynamoUI\obj\Debug\WPF\Button.baml
+D:\API\DynamoUI\obj\Debug\WPF\Slider.baml
+D:\API\DynamoUI\obj\Debug\WPF\ComboBox.baml
 D:\API\DynamoUI\obj\Debug\DynamoUI.g.resources
 D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CoreCompileInputs.cache
 D:\API\DynamoUI\obj\Debug\DynamoUI.csproj.CopyComplete
 D:\API\DynamoUI\obj\Debug\DynamoUI.dll
 D:\API\DynamoUI\obj\Debug\DynamoUI.pdb
+<<<<<<< HEAD
 D:\API\DynamoUI\obj\Debug\WPF\Button.g.cs
 D:\API\DynamoUI\obj\Debug\WPF\Button.baml
 D:\API\DynamoUI\obj\Debug\WPF\Slider.g.cs
@@ -88,3 +99,5 @@ H:\revit\Dynamo\API\DynamoUI\obj\Debug\WPF\ComboBox.baml
 H:\revit\Dynamo\API\DynamoUI\obj\Debug\DynamoUI.g.resources
 H:\revit\Dynamo\API\DynamoUI\obj\Debug\DynamoUI.csproj.CoreCompileInputs.cache
 H:\revit\Dynamo\API\DynamoUI\obj\Debug\DynamoUI.csproj.CopyComplete
+=======
+>>>>>>> fb3569762488a1d419197fbfe113b1a98c7e91b2

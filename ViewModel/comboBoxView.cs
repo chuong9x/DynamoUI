@@ -13,5 +13,10 @@ using DynamoUI.Model;
 
 namespace DynamoUI.ViewModel
 {
+<<<<<<< HEAD
     
 }
+=======
+
+}
+>>>>>>> fb3569762488a1d419197fbfe113b1a98c7e91b2

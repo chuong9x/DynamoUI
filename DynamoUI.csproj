@@ -91,6 +91,7 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\API\Dynamo-SDK-Revit\Revit 2020-Dynamo 2.1\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -101,6 +102,7 @@
       <HintPath>..\Dynamo-SDK-RevitAPI\Revit 2020-Dynamo 2.1\ProtoGeometry.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPI">
+<<<<<<< HEAD
       <HintPath>..\Dynamo-SDK-RevitAPI\Revit 2020-Dynamo 2.1\RevitAPI.dll</HintPath>
     </Reference>
     <Reference Include="RevitAPIUI">
@@ -111,6 +113,22 @@
     </Reference>
     <Reference Include="RevitServices">
       <HintPath>..\Dynamo-SDK-RevitAPI\Revit 2020-Dynamo 2.1\RevitServices.dll</HintPath>
+=======
+      <HintPath>..\Dynamo-SDK-Revit\Revit 2020-Dynamo 2.1\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\Dynamo-SDK-Revit\Revit 2020-Dynamo 2.1\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitNodes">
+      <HintPath>..\Dynamo-SDK-Revit\Revit 2020-Dynamo 2.1\RevitNodes.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitServices">
+      <HintPath>..\Dynamo-SDK-Revit\Revit 2020-Dynamo 2.1\RevitServices.dll</HintPath>
+      <Private>False</Private>
+>>>>>>> fb3569762488a1d419197fbfe113b1a98c7e91b2
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -124,7 +142,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\comboBoxModel.cs" />
+    <Compile Include="Model\ComboBoxModel.cs" />
     <Compile Include="Model\DropDownModel.cs" />
     <Compile Include="Model\SliderNodeModel.cs" />
     <Compile Include="SampleFuntion.cs" />
