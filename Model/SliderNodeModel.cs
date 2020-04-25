@@ -33,7 +33,7 @@ namespace DynamoUI
             set
             {
                 _sliderValue = value;
-                RaisePropertyChanged("SliderValue");
+                RaisePropertyChanged(nameof(SliderValue));
                 OnNodeModified(true);
             }
         }
